@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Wonders</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type="text/javascript" src="jquery.quickfilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#txtSearch').quickfilter('#list li');
+        });
+    </script>
+</head>
+<body>
+    
+    
+    
+    <div class="container" >
+        <br><br>
+        <h2 >The Seven Wonders of The World</h2>
+        <br>
+        <input type="text" id="txtSearch" placeholder="Search...." />
+        <br><br><br>
+        <ul id="list">
+            <div class="row">
+            <li class="col" s><img src="img/taj.png" width="380px" height="320px"><br>The Taj Mahal</li>
+            <li class="col"><img src="img/pyramid.jpg" width="380px" height="320px"><br>The Great Pyramid of Giza</li>
+            <li class="col"><img src="img/china.jpg" width="380px" height="320px"><br>The Great Wall of China</li>
+            <li class="col"><img src="img/colosseum.jpg" width="380px" height="320px"><br>The Colosseum</li>
+            </div>
+            <div class="row">
+            <li class="col"><img src="img/chick.jpg" width="380px" height="320px"><br>Chichen Itza</li>
+            <li class="col"><img src="img/machu.jpg" width="380px" height="320px"><br>Machu Pichu</li>
+            <li class="col"><img src="img/christ.jpeg" width="380px" height="320px"><br>Christ the Redeemer</li>
+            </div>
+            
+            
+        </ul>
+        
+    </div>
+</body>
+</html>
